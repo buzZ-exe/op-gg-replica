@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(#28344Ee6, #7597dee6), url(images/yasuo.png);
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background:#202d37;
+}
+
+.logo {
+    width: 200px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover, .active {
+    background: #0b9ff1;
+    color: #202d37;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff33;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(120%);
+}
+
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.search button img{
+    width: 25px;
+    
+}
+
+.search button {
+    width: 60px;
+    border: 0;
+    border-radius: 50%;
+    height: 60px;
+    background: #202d37;
+    cursor: pointer;
+}
