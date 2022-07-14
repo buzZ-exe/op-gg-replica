@@ -31,7 +31,13 @@ header {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.logo:hover {
+    transform: scale(1.04);
 }
 
 header ul {
@@ -52,9 +58,19 @@ header ul li a {
     border-radius: 20px;
 }
 
-header ul li a:hover, .active {
+/* For expanding effect */
+.container-for-li ul li a:hover, .active  {
     background: #0b9ff1;
     color: #202d37;
+}
+
+.container-for-li li{
+    transition: 0.09s;
+    display: inline-block;
+}
+
+.container-for-li li:hover {
+    transform: scale(1.04);
 }
 
 .container {
@@ -97,10 +113,16 @@ header ul li a:hover, .active {
 }
 
 .search button {
+    display: inline-block;
+    transition: 0.2s;
     width: 60px;
     border: 0;
     border-radius: 50%;
     height: 60px;
     background: #202d37;
     cursor: pointer;
+}
+
+.search button:hover {
+    transform: scale(1.125);
 }
